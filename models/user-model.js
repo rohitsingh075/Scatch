@@ -9,7 +9,6 @@ const userSchema=mongoose.Schema({
         type:Array,
         default:[]
     },
-    isadmin:Boolean,
     orders:{
         type:Array,
         default:[]
@@ -18,4 +17,4 @@ const userSchema=mongoose.Schema({
     picture:String,
 })
 
-module.exports=monogoose.model("user",userSchema);
+module.exports=mongoose.model("users",userSchema);
