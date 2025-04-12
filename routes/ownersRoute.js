@@ -27,9 +27,10 @@ if(process.env.NODE_ENV=="development"){
 
 
 
-router.get("/",function(req,res){
-    res.send("hey it's working");
+router.get("/admin",function(req,res){
+    res.render("createproducts",{ success: req.flash('success') || [] });
 });
+
 
 
 
